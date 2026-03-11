@@ -1,4 +1,4 @@
-# Value at Risk (VaR) — Portfolio Risk Analysis
+# Value at Risk (VaR)  Portfolio Risk Analysis
 
 Calculates the daily Value at Risk of a multi-asset portfolio using three industry-standard methods. Built as a quantitative finance project demonstrating risk management techniques used by banks and hedge funds worldwide.
 
@@ -15,7 +15,7 @@ Calculates the daily Value at Risk of a multi-asset portfolio using three indust
  Only on the worst 5% of days will losses exceed $1,947."
 ```
 
-This is the core metric used by every major bank daily to determine how much capital to set aside as a buffer against potential losses — a requirement mandated by regulators after the 2008 financial crisis.
+This is the core metric used by every major bank daily to determine how much capital to set aside as a buffer against potential losses  a requirement mandated by regulators after the 2008 financial crisis.
 
 ---
 
@@ -34,15 +34,15 @@ Data: January 2015 — December 2025 (2,761 trading days)
 
 ## Three Methods Compared
 
-### Method 1 — Historical VaR
+### Method 1: Historical VaR
 ```
 Uses actual past returns directly
 Sorts all daily losses from worst to best
 Takes the 5th percentile as the VaR threshold
-Honest — includes all real market events (COVID, rate hikes)
+Honest includes all real market events (COVID, rate hikes)
 ```
 
-### Method 2 — Parametric VaR
+### Method 2: Parametric VaR
 ```
 Assumes returns follow a normal distribution
 Uses mean and standard deviation mathematically
@@ -50,7 +50,7 @@ Applies z-score of -1.645 for 95% confidence
 Fast but assumes perfect bell curve
 ```
 
-### Method 3 — Monte Carlo VaR
+### Method 3: Monte Carlo VaR
 ```
 Simulates 10,000 possible future trading days
 Uses same mean and std as real data
@@ -101,7 +101,7 @@ This is why the 2008 crisis caught most bank models off guard
 ```
 2015-2025 was largely a bull market period
 Real 5th percentile was less extreme than bell curve predicted
-This shows why using multiple methods matters —
+This shows why using multiple methods matters 
 each tells a slightly different story
 ```
 
@@ -109,7 +109,7 @@ each tells a slightly different story
 ```
 Underprepared → bank collapses during crisis
 Overprepared  → holds extra capital, slightly less profitable
-               but safe — always the right choice
+               but safe always the right choice
 ```
 
 ---
@@ -145,7 +145,4 @@ Libraries  : yfinance, scikit-learn, pandas, numpy, matplotlib, scipy
 Data       : Yahoo Finance via yfinance API (2015-2025)
 ```
 
----
 
-> Built as a self-directed learning project in quantitative finance and risk management.
-> Completed with AI assistance (Claude by Anthropic) as a guided learning exercise.
